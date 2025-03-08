@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JT-Shots | Professional Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Add this right after opening body tag -->
+<div class="page-transition">
+    <div class="transition-slide"></div>
+    <div class="transition-slide"></div>
+    <div class="transition-slide"></div>
+</div>
+    <nav>
+        <div class="logo">JT-Shots</div>
+        <ul class="nav-links">
+            <li><a href="index" class="active">Home</a></li>
+            <li><a href="projects">Projects</a></li>
+            <li><a href="blog">Blog</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-slider">
+            <div class="slide active" style="background-image: url('IMG_0118.JPG')"></div>
+            <div class="slide" style="background-image: url('IMG_0112.JPG')"></div>
+        </div>
+        
+        <div class="hero-content">
+            <div class="brand-mark">
+                <div class="circle"></div>
+                <h1>JTPhot</h1>
+            </div>
+            
+            <div class="dynamic-text">
+                <div class="text-cycle">
+                    <span>Capturing Life</span>
+                    <span>Creating Art</span>
+                    <span>Telling Stories</span>
+                </div>
+            </div>
+            
+            <div class="hero-buttons">
+                <a href="photos" class="cta-button secondary">Explore Gallery</a>
+            </div>
+        </div>
+        
+        <div class="hero-footer">
+            <div class="social-strip">
+                <a href="#" class="social-icon">Instagram</a>
+                <a href="#" class="social-icon">Facebook</a>
+                <a href="#" class="social-icon">Twitter</a>
+            </div>
+            <div class="scroll-prompt">
+                <span>Discover More</span>
+                <div class="arrow-down"></div>
+            </div>
+        </div>
+    </header>    
+
+    <section id="portfolio" class="portfolio">
+        <div class="portfolio-header">
+            <h2>Portfolio</h2>
+            <div class="portfolio-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="wedding">Wedding</button>
+                <button class="filter-btn" data-filter="portrait">Portrait</button>
+                <button class="filter-btn" data-filter="landscape">Landscape</button>
+            </div>
+        </div>
+    
+        <div class="portfolio-grid">
+            <div class="portfolio-item wedding" data-category="wedding">
+                <div class="item-inner">
+                    <img src="images/wedding1.jpg" alt="Wedding Photography">
+                    <div class="item-overlay">
+                        <h3>Summer Wedding</h3>
+                        <p>Lake Tahoe, 2023</p>
+                        <a href="#" class="view-project">View Gallery</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more portfolio items following the same structure -->
+        </div>
+    
+        <div class="portfolio-modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <div class="modal-image-container">
+                    <img src="" alt="">
+                    <button class="nav-btn prev">&larr;</button>
+                    <button class="nav-btn next">&rarr;</button>
+                </div>
+                <div class="modal-info">
+                    <h3></h3>
+                    <p></p>
+                </div>
+            </div>
+        </div>
+    </section>    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>JT-Shots</h2>
+                <p class="tagline">Capturing life's precious moments</p>
+                <div class="social-icons">
+                    <a href="#" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#" class="social-link facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <a href="#" class="social-link pinterest">
+                        <i class="fab fa-pinterest"></i>
+                    </a>
+                </div>
+            </div>
+    
+            <div class="footer-sections">
+                <div class="footer-col">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>
+                            <i class="fas fa-phone"></i>
+                            <span><a href="tel:+7368 947067">7368 947067</a></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-envelope"></i>
+                            <span><a href="mailto:info@JT-Shots.co.uk">info@JT-Shots.co.uk</a></span>
+                        </li>
+                        <li>
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Wiltshire, United Kingdom</span>
+                        </li>
+                    </ul>
+                </div>
+    
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Portfolio</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <div class="copyright">
+                © 2025 JT-Shots. All rights reserved.
+            </div>
+            <div class="footer-links">
+                <a href="#">Privacy Policy</a>
+                <a href="#">Terms of Service</a>
+            </div>
+        </div>
+    </footer>    
+    <script src="script.js"></script>
+</body>
+</html>

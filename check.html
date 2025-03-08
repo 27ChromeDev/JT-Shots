@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JTPhoto | Professional Photography</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Add this in the <head> section -->
+        <script src="https://www.google.com/recaptcha/api.js"></script>
+</head>
+<body>
+    <div id="pin-lightbox" class="pin-lightbox">
+        <div class="pin-container">
+            <h2>Enter Access PIN</h2>
+            <div class="pin-input-wrapper">
+                <input type="text" id="pin-input" class="pin-input" maxlength="4" placeholder="****">
+                <button id="pin-submit" class="pin-submit">Enter</button>
+            </div>
+            <p id="pin-error" class="pin-error"></p>
+            <div id="recaptcha-container" class="recaptcha-container">
+                <div class="g-recaptcha" 
+                     data-sitekey="6LdkuG4qAAAAAHg7DtMtKAH0QvgHsf1FKiLY5Dhv" 
+                     data-callback="onRecaptchaSuccess"
+                     >
+                </div>
+            </div>
+        </div>
+    </div>    
+    <div class="loading-overlay">
+        <div class="gradient-circle"></div>
+        <div class="brand">JTPhoto</div>
+    </div>    
+    <nav class="navbar">
+        <a href="index.html"><img src="logo.svg" draggable="false"></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="photos.html" class="active">Our Photos</a>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <div class="hero-content">
+            <h1>Our Photos</h1>
+            <p>View the stunning photos caputured, and edited by JTPhoto.<br><br>These can be downloaded and printed.
+            
+            
+            
+            </p>
+            <a href="#photos" class="cta-button">View Photos</a>
+        </div>
+    </header>
+
+    <section class="featured-work" id="photos">
+        <h1>Featured Work</h1>
+        <p>Click on an image to view our collection of photos for that type.</p>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="trees.html"><img src="IMG_0112.JPG" alt="Tree Photography"></a>
+                <div class="overlay">Trees</div>
+            </div>
+            <div class="gallery-item">
+                <a href="birds.html"><img src="IMG_0118.JPG" alt="Bird Photography"></a>
+                <div class="overlay">Birds</div>
+            </div>
+            <div class="gallery-item">
+                <img src="images/photo3.jpg" alt="Sunrise/Sunset Photography">
+                <div class="overlay">Sunrise/Sunset</div>
+            </div>
+        </div>
+    </section>  
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>JTPhoto</h3>
+                <p>Capturing life's precious moments through the lens of creativity and passion since 2024.</p>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="projects.html">Portfolio</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="products.html">Shop</a></li>
+                </ul>
+            </div>
+    
+            <div class="footer-section">
+                <h4>Contact</h4>
+                <ul>
+                    <li>Wiltshire</li>
+                    <li>contact@jtphoto.com</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2024 JTPhoto. All rights reserved.</p>
+        </div>
+    </footer>    
+
+    <script src="script.js"></script>
+    <script src="check.js"></script>
+</body>
+</html>
